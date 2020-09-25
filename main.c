@@ -37,11 +37,11 @@ int main()
 	reset();
 	printf("\n");
 	printf("ft_strlen : %ld\n", ft_strlen("salut"));
-	printf("strlen : %ld\n", strlen("salut"));
+	printf("strlen    : %ld\n", strlen("salut"));
 	printf("ft_strlen : %ld\n", ft_strlen("fghjfjgg fgugfyu &&\n"));
-	printf("strlen : %ld\n", strlen("fghjfjgg fgugfyu &&\n"));
+	printf("strlen    : %ld\n", strlen("fghjfjgg fgugfyu &&\n"));
 	printf("ft_strlen : %ld\n", ft_strlen(""));
-	printf("strlen : %ld\n", strlen(""));
+	printf("strlen    : %ld\n", strlen(""));
 
 	write(1, "\n", 1);
 	
@@ -52,7 +52,7 @@ int main()
 	printf("adress before call ft_strcpy: %p\n", dest);
 	printf("adress after call ft_strcpy : %p\n", ft_strcpy(dest, "bienvenue"));
 	printf("ft_strcpy : %s\n", dest);
-	printf("strcpy : %s\n", ft_strcpy(dest3, "bienvenue"));
+	printf("strcpy    : %s\n", ft_strcpy(dest3, "bienvenue"));
 
 	write(1, "\n", 1);
 	
@@ -61,11 +61,11 @@ int main()
 	reset();
 	printf("\n");
 	printf("ft_strcmp : %d\n", ft_strcmp("salutations", "salutations"));
-	printf("strcmp : %d\n", strcmp("salutations", "salutations"));
+	printf("strcmp    : %d\n", strcmp("salutations", "salutations"));
 	printf("ft_strcmp : %d\n", ft_strcmp("salutations", "salutacions"));
-	printf("strcmp : %d\n", strcmp("salutations", "salutacions"));
+	printf("strcmp    : %d\n", strcmp("salutations", "salutacions"));
 	printf("ft_strcmp : %d\n", ft_strcmp("salutations", "salztations"));
-	printf("strcmp : %d\n", strcmp("salutations", "salztations"));
+	printf("strcmp    : %d\n", strcmp("salutations", "salztations"));
 
 	write(1, "\n", 1);
 
@@ -119,11 +119,11 @@ int main()
 	reset();
 	printf("\n");
 	printf("ft_strdup : %s\n", ft_strdup("strdup c'est pas du r/p"));
-	printf("strdup : %s\n", strdup("strdup c'est pas du r/p"));
+	printf("strdup    : %s\n", strdup("strdup c'est pas du r/p"));
 	printf("ft_strdup : %s\n", ft_strdup(""));
-	printf("strdup : %s\n", strdup(""));
+	printf("strdup    : %s\n", strdup(""));
 	printf("ft_strdup : %s\n", ft_strdup("hsdwui 6768&&&&\n"));
-	printf("strdup : %s\n", strdup("hsdwui 678&&&&\n"));
+	printf("strdup    : %s\n", strdup("hsdwui 6768&&&&\n"));
 
 	return (0);
 }
