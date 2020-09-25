@@ -22,8 +22,3 @@ _end:
 _ret:
 	leave
 	ret
-	
-
-	
-
-

@@ -1,3 +1,4 @@
+extern __errno_location
 global ft_read
 
 section .text
@@ -6,12 +7,16 @@ ft_read:
 	mov rbp, rsp
 	mov rax, 0
 	syscall
-	cmp rsi, 0
-	je _error
+	cmp rax, 0
+	jl _error
 	mov rax, rdx
 	jmp _ret
 
 _error:
+	neg eax
+	mov rdx, rax
+	call __errno_location
+	mov [rax], rdx
 	mov rax, -1
 	jmp _ret
 

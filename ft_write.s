@@ -8,7 +8,7 @@ ft_write:
 	mov rax, 1
 	syscall
 	cmp rax, 0
-	jne _error
+	jl _error
 	mov rax, rdx
 	jmp _ret
 
