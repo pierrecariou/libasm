@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <errno.h>
 
 size_t	ft_strlen(const char *s);
 char 	*ft_strcpy(char *dest, const char *src);
@@ -51,6 +52,9 @@ int main()
 	printf("****ft_write****\n\n");
 	printf("ret : %ld\n", ft_write(1, "salut\n", 6));
 	printf("ret : %ld\n", ft_write(1, 0, 2));
+	printf("errno : %d\n", errno);
+	printf("ret : %ld\n", write(1, 0, 2));
+	printf("errno : %d\n", errno);
 
 	write(1, "\n", 1);
 
