@@ -22,6 +22,8 @@ _loop:
 	jmp _loop
 
 _end:
+	mov al, [rdi]
+	mov r11b, [rsi]
 	sub rax, r11
 	jmp _ret
 
